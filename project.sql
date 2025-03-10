@@ -9,7 +9,6 @@ SELECT [location], [date] total_cases, total_cases,total_deaths, population, (to
   where [location] like '%states'
   ORDER BY 1, 2
 
-
 SELECT [location], MAX(total_cases) HighestInfectionCount, population, MAX(total_cases)/population*100 TotalCasePercentage
   FROM covid_death
   GROUP BY population, [location]
